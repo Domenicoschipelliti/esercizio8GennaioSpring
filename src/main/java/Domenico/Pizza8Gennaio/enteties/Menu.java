@@ -8,7 +8,10 @@ public class Menu {
     }
 
     public void rispostaOrdine(){
-        System.out.println("l'ordine con pizza "+ impostazioniComuni.getName()+impostazioniComuni.getCalories()+impostazioniComuni.getPrice()+"verrà tra poco");
+        System.out.println("Abbiamo la pizza "+ impostazioniComuni.getName()+" "+impostazioniComuni.getCalories()+" calorie "+impostazioniComuni.getPrice()+" Euro");
+        System.out.println("La pizza "+ impostazioniComuni.getName()+" "+impostazioniComuni.getCalories()+" calorie "+impostazioniComuni.getPrice()+" Euro");
+        System.out.println("Questa la consiglio è "+ impostazioniComuni.getName()+" "+impostazioniComuni.getCalories()+" calorie "+impostazioniComuni.getPrice()+" Euro");
+        System.out.println("Infine la pizza "+ impostazioniComuni.getName()+" "+impostazioniComuni.getCalories()+"  calorie "+impostazioniComuni.getPrice()+" Euro");
         impostazioniComuni.Ordine();
     }
 

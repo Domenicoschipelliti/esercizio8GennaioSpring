@@ -13,7 +13,7 @@ public class Bevande implements ImpostazioniComuni{
 
     @Override
     public void Ordine() {
-        System.out.println("pizza più pizza e bevande servita a breve");
+        System.out.println("pizza più  bevande servita a breve");
     }
 
     @Override
