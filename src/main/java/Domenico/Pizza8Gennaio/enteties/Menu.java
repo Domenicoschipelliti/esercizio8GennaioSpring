@@ -6,6 +6,9 @@ public class Menu {
     public Menu(ImpostazioniComuni impostazioniComuni){
         this.impostazioniComuni=impostazioniComuni;
     }
+    public Menu(){
+
+    }
 
     public void rispostaOrdine(){
         System.out.println("Abbiamo la pizza "+ impostazioniComuni.getName()+" "+impostazioniComuni.getCalories()+" calorie "+impostazioniComuni.getPrice()+" Euro");

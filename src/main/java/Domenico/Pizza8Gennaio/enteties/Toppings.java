@@ -12,6 +12,10 @@ public class Toppings implements ImpostazioniComuni{
         this.price = price;
     }
 
+    public Toppings(){
+        
+    }
+
     @Override
     public void Ordine() {
         System.out.println("pizza con toppings aggiunta all'ordine");

@@ -6,13 +6,15 @@ public class Pizze implements ImpostazioniComuni{
 
     private int price;
 
-    private String pomodoro;
-    private String formaggio;
+
 
     public Pizze(String name, String calories, int price) {
         this.name = name;
         this.calories = calories;
         this.price = price;
+    }
+    public Pizze(){
+
     }
 
     @Override

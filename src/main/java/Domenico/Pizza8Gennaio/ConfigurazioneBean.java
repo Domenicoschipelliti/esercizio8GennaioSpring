@@ -10,19 +10,28 @@ public class ConfigurazioneBean {
     @Bean
     @Primary//in caso di indecisione da parte di spring l'annotazione primary darà il consenso di usare questa
     Pizze pizze(){
-       return new Pizze("pizza margherita","90",5);
+       return new Pizze("pizza margherita(mozzarella,pomodoro),Hawaiian pizza(pomodoro,formaggio,prsciutto,ananas),Salami pizza(pomodoro,formaggio,salame)","1100,1199,1200,1111",17);
     }
 
     @Bean
     Toppings toppings(){
-        return new Toppings("pizza margherita con prosciutto","100",27);
+        return new Toppings("formaggio,prosciutto,cipolle,ananas,salame","100,22,10,25,1100",4);
     }
 
     @Bean
     Bevande bevande(){
-        return new Bevande("birra","12",1);
+        return new Bevande("Limonata,Acqua,Vino","12,0,9",10);
     }
 
+    @Bean
+    Menu bevanda(Bevande impostazioniComuni){
+        return new Menu(impostazioniComuni);
+    }
+
+    @Bean
+    Menu condimenti(Toppings impostazioniComuni){
+        return new Menu(impostazioniComuni);
+    }
 
     @Bean
     Menu menu(ImpostazioniComuni impostazioniComuni){

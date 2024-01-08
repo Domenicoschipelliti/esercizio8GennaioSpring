@@ -10,6 +10,9 @@ public class Bevande implements ImpostazioniComuni{
         this.calories = calories;
         this.price = price;
     }
+    public Bevande(){
+
+    }
 
     @Override
     public void Ordine() {
