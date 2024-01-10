@@ -37,5 +37,13 @@ public class TestPizzeriaEfficenza {
         System.out.println("fine di tutti i test...");
     }
 
+    @ParameterizedTest
+    @ValueSource(strings = {"pizza"})
+    public void ricercaPizza(){
+        String nome="pizza";
+        assertNotNull(nome);
+        System.out.println(nome);
+    }
+
 
 }
