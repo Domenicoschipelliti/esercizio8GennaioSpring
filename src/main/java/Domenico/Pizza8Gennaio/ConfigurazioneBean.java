@@ -1,6 +1,7 @@
 package Domenico.Pizza8Gennaio;
 
 import Domenico.Pizza8Gennaio.enteties.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,20 +13,19 @@ import org.springframework.context.annotation.PropertySource;
 public class ConfigurazioneBean {
 
 
-    @Bean
-    @Primary   //in caso di indecisione da parte di spring l'annotazione primary darà il consenso di usare questa
+    @Bean//in caso di indecisione da parte di spring l'annotazione primary darà il consenso di usare questa
+    @Primary
     Pizze pizze(){
         return new Pizze("pizza margherita(mozzarella,pomodoro),Hawaiian pizza(pomodoro,formaggio,prsciutto,ananas),Salami pizza(pomodoro,formaggio,salame)","1100,1199,1200,1111",17);
     }
 
     @Bean
-    @Primary
+
     Toppings toppings(){
         return new Toppings("formaggio,prosciutto,cipolle,ananas,salame","100,22,10,25,1100",4);
     }
 
     @Bean
-    @Primary
     Bevande bevande(){
         return new Bevande("Limonata,Acqua,Vino","12,0,9",10);
     }
@@ -84,6 +84,13 @@ public class ConfigurazioneBean {
     @Bean
     Bevande acqua(){
         return new Bevande("acqua","0",2);
+    }
+
+
+
+    @Bean
+    Menu men(ImpostazioniComuni impostazioniComuni){
+        return new Menu(impostazioniComuni);
     }
 
 

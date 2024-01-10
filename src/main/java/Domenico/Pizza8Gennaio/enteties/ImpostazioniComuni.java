@@ -7,7 +7,7 @@ public interface ImpostazioniComuni  {
 
     public int getPrice();
 
-    public void Ordine();
+    public String Ordine();
 
 
 

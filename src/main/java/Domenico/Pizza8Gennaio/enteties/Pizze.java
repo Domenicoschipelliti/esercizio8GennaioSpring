@@ -18,8 +18,9 @@ public class Pizze implements ImpostazioniComuni{
     }
 
     @Override
-    public void Ordine() {
+    public String Ordine() {
         System.out.println("la pizza sta arrivando...");
+        return "";
     }
 
     @Override

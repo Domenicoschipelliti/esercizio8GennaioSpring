@@ -17,8 +17,8 @@ public class Toppings implements ImpostazioniComuni{
     }
 
     @Override
-    public void Ordine() {
-        System.out.println("pizza con toppings aggiunta all'ordine");
+    public String Ordine() {
+        return "pizza con toppings aggiunta all'ordine";
     }
 
     @Override
