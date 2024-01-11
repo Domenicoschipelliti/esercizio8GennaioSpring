@@ -1,4 +1,4 @@
-package Domenico.Pizza8Gennaio.enteties;
+package Domenico.Pizza8Gennaio.interfacce;
 
 public interface ImpostazioniComuni  {
 

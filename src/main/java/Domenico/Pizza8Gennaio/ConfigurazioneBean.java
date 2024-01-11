@@ -1,8 +1,7 @@
 package Domenico.Pizza8Gennaio;
 
 import Domenico.Pizza8Gennaio.enteties.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import Domenico.Pizza8Gennaio.interfacce.ImpostazioniComuni;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;

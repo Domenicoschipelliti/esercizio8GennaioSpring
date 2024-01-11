@@ -1,5 +1,6 @@
 package Domenico.Pizza8Gennaio.enteties;
 
+import Domenico.Pizza8Gennaio.interfacce.ImpostazioniComuni;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -8,7 +9,7 @@ import lombok.Setter;
 
 @Entity
 @Setter
-public class Bevande implements ImpostazioniComuni{
+public class Bevande implements ImpostazioniComuni {
     @Id
     @GeneratedValue
     @Getter
