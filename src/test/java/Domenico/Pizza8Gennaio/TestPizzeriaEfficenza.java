@@ -5,10 +5,11 @@ import Domenico.Pizza8Gennaio.enteties.Menu;
 import Domenico.Pizza8Gennaio.enteties.Pizze;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.beans.factory.annotation.Value;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestPizzeriaEfficenza {
     @BeforeAll //viene usato quando si vuole fare un azione prima di qualsiasi test(quindi sarà il primo ad essere stampato dopo verranno i test)
@@ -44,6 +45,8 @@ public class TestPizzeriaEfficenza {
         assertNotNull(nome);
         System.out.println(nome);
     }
+
+
 
 
 }

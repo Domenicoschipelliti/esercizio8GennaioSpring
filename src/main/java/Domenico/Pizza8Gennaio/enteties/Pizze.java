@@ -1,6 +1,18 @@
 package Domenico.Pizza8Gennaio.enteties;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Setter
 public class Pizze implements ImpostazioniComuni{
+    @Id
+    @GeneratedValue
+    @Getter
+    private long id;
     private String name;
     private String calories;
 
@@ -28,27 +40,21 @@ public class Pizze implements ImpostazioniComuni{
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+
 
     @Override
     public String getCalories() {
         return calories;
     }
 
-    public void setCalories(String calories) {
-        this.calories = calories;
-    }
+
 
     @Override
     public int getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
+
 
     @Override
     public String toString() {
